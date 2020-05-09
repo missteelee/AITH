@@ -15,7 +15,7 @@
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   <div class="w3-container">
-    <h3 class="w3-padding-64"><b>Ace in the Hole <br>Multisport Events</b></h3>
+    <h3><img src="images/logo.jpg" alt="Site Logo" style="width:50%;"></h3>
   </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
@@ -29,7 +29,7 @@
 <!-- Top menu on small screens -->
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span>AITH</span>
+  <span><img src="images/logo.jpg" alt="Site Logo" style="width:5%;"></span>
 </header>
 
 <main>
@@ -41,34 +41,65 @@
 
   <!-- Header -->
   <div class="w3-container" style="margin-top:80px" id="showcase">
-    <h1 class="w3-jumbo"><b>Ace in the Hole Multisport Events</b></h1>
-    <h1 class="w3-xlarge w3-text-red"><b>is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds. We offer Events for Every Body.</b></h1>
+    <h1 class="jumbo w3-text-red">Ace in the Hole Multisport Events</h1>
+    <h2>is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds.<br>
+    <b>We offer Events for Every Body.</b></h2>
     <hr style="width:100%;border:3px solid black" class="w3-round">
   </div>
   
 <section>
   <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>JavaScript Slidshow</b></h1>
+    <h1>JavaScript Slidshow</h1>
     <hr style="width:100%;border:3px solid black" class="w3-round">
 </section>
 
   <!-- Course Details -->
   <div class="w3-container" id="services" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Course Details</b></h1>
-    <hr style="width:100%;border:3px solid black" class="w3-round">
-    <p>We are a interior design service that focus on what's best for your home and what's best for you!</p>
-    <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
-    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </p>
+       <section>
+        <h1>Course Details</h1>
+       <hr style="width:100%; border:3px solid black" class="w3-round"> 
+            <p><strong>WATER TEMPERATURE</strong> is expected to be between 62 &amp; 66 degrees. The temperature will be taken on Friday and the morning of the race. Wetsuits are recommended.</p>
+
+            <strong>Long Course SWIM – 1.2mi</strong>
+            <p>Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.</p>
+
+            <strong>Long Course BIKE – 58 Miles</strong>
+            <p>A scenic point-to-point course that travels over gently rolling hills prior to three hard climbs. The bike course will be marked with large directional signage and there will be course marshals at key intersections to help direct you.</p>
+
+            <strong>Long Course RUN – 13.1mi</strong>
+            <p>A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (two hills total with a minimal elevation gain).</p>
+
+            <strong>Olympic SWIM – 1,500 meters</strong>
+            <p>Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.</p>
+
+            <strong>Olympic BIKE – 28mi</strong>
+            <p>A scenic point-to-point course that travels over gently rolling hills. The bike course will be marked with large directional signage and course marshals will be present at key intersections.</p>
+
+            <strong>Olympic RUN – 10K</strong>
+            <p>A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (one hill total with a minimal elevation gain).</p>
+
+            <strong>Sprint</strong>
+            <p>Course will offer a 1-loop 1/2 mile swim, the exact same 28 mile Bike Course as the Olympic distance and a 5km run.</p>
+
+            <strong>Try-A-Tri</strong>
+            <p>This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable 1/4 mile distance, (instead of the standard 1/2-mile Sprint distance swim), 10 mile bike ride (vs 12 miles and it's a 2 loop course making it very spectator friendly!) and a flat 2 mile run (vs 3 mile sprint course).</p>
+
+            <strong>Half Marathon COURSE: Half-Marathon (13.1-miles)</strong>
+            <p>Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports &amp; Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified.</p>
+
+            <strong>10k COURSE</strong>
+            <p>The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</p>
+
+            <strong>Splash 'n' Dash</strong>
+            <p>The Kids event for participants ages 4 to 15. This is a 100 yard swim and a 50 yard dash. It is free if an adult registers for an event otherwise it is $25.</p>
+        </section>   
   </div>
   
   <!-- Registration -->
   <div class="w3-container" id="registration" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Registration</b></h1>
+    <h1>Registration</h1>
     <hr style="width:100%;border:3px solid black" class="w3-round">
  <section>
- <h1>Registration</h1>
       <article id="registration">
         <ul>
           <li><span>Long Course Triathlon</span> <span>$240</span></li>
@@ -88,7 +119,7 @@
           <li>Accurate Chip Timing for competitive races</li>
           <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
             <li>Post-event party and entertainment</li><br>
-            <li><i>NOTE: Tech shirts guaranteed to pre-registered participants only.</i></li>
+            <i>NOTE: Tech shirts guaranteed to pre-registered participants only.</i>
         </ul>
 
         <strong>Packet Pick-Up</strong>
@@ -154,46 +185,37 @@
     </section>
     
     
-    <p><b>Our designers are thoughtfully chosen</b>:</p>
-  </div>
+    <!-- Frequently Asked Questions -->
+  <section>
+    <div class="w3-container" id="services" style="margin-top:75px">
+    <h1>FAQ's</h1>
+    <hr style="width:100%;border:3px solid black" class="w3-round">
+          <ul>
+              <p><b>What are the Rules?</b></p>
+                <p>We currently adhere to the USAT Rules for Triathlon &amp; Duathlon. Important rules include no drafting, you must wear a helmet and music is <strong>absolutely not</strong> allowed during the bike for obvious safety reasons.</p>
 
-  <!-- The Team -->
-  <div class="w3-row-padding w3-grayscale">
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
-        <div class="w3-container">
-          <h3>John Doe</h3>
-          <p class="w3-opacity">CEO & Founder</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
-        <div class="w3-container">
-          <h3>Jane Doe</h3>
-          <p class="w3-opacity">Designer</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-    <div class="w3-col m4 w3-margin-bottom">
-      <div class="w3-light-grey">
-        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
-        <div class="w3-container">
-          <h3>Mike Ross</h3>
-          <p class="w3-opacity">Architect</p>
-          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
-        </div>
-      </div>
-    </div>
-  </div>
+              <p><b>Can I use a personal music device while cycling?</b></p>
+                <p>Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</p>
 
-  <!-- Packages / Pricing Tables -->
+                <p><b>Can I use a personal music device while running?</b></p>
+                  <p>During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.</p>
+                  <p>If you chose to use a personal music device, you must always keep one ear open for instructions so only one ear-bud can be used at any time. In addition, if you opt to use music, you will not be eligible for awards, points and rankings. So as an athlete, you have to make a choice - music or awards/points/rankings.</p>
+                  <p>If you are using a personal music devise with two earbuds, you will be immediately disqualified. Trust us, we don’t want to have to enforce a disqualification but in order to assure the safety of all athletes, this is a very important rule.</p>
+                  <p>We also request that if you chose to use a personal music device that you keep the volume to a minimum to assure all instructions can be heard.</p>
+                  
+                  <p><b>Do I need to wear a wetsuit?</b></p>
+                  <p>No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor.</p>
+
+                  <p><b>Do I have to use a road or racing bike?</b></p>
+                  <p>No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
+            </ul>
+</div>
+</section>
+
+
+  <!-- Weekend Details -->
   <div class="w3-container" id="packages" style="margin-top:75px">
-    <h1 class="w3-xxlarge w3-text-red"><b>Ace in the Hole Multisport Weekend</b></h1>
+    <h1>Ace in the Hole Multisport Weekend</h1>
     <hr style="width:100%;border:3px solid black" class="w3-round">
     <p>Ace in the Hole Multisport events will hold a multisport event on June 20th and 21st, 2020, and would like the entire site to go live by June 9, 2020.</p>
   </div>
@@ -206,8 +228,6 @@
         <li class="w3-padding-16">Olympic Triathlon 7:30 AM</li>
         <li class="w3-padding-16">10K 7:15 AM</li>
         <li class="w3-padding-16">Half Marathon 7:15 AM</li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
         </li>
       </ul>
     </div>   
@@ -219,8 +239,6 @@
         <li class="w3-padding-16">Try-a-Tri 8:20 AM</li>
         <li class="w3-padding-16">Splash n Dash 12:00 PM</li>
         <li class="w3-padding-16"><br></li>
-        <li class="w3-light-grey w3-padding-24">
-          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
         </li>
       </ul>
     </div>
@@ -228,7 +246,7 @@
   
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
-    <h1 class="w3-xxxlarge w3-text-red"><b>Contact Us</b></h1>
+    <h1>Contact Us</h1>
     <hr style="width:100%;border:3px solid black" class="w3-round">
     <p>Still have questions? Fill out the form below and a member of our team will get back to you within 24 hours.</p>
     <form action="/action_page.php" target="_blank">
@@ -256,12 +274,6 @@
       <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
     </form>  
   </div>
-
-<!-- End page content -->
-</div>
-
-<!-- W3.CSS Container -->
-<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"><?php include 'includes/footer.inc.html.php'; ?></a></p></div>
 
 <script>
 // Script to open and close sidebar
