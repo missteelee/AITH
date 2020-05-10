@@ -1,0 +1,119 @@
+/*
+File Name: style.less
+Date: 05/01/2020
+Programmer: Traci Lee
+*/
+
+/* VARIABLES */
+
+/* colors */
+
+@baseColor: red;
+@mBgColor: @baseColor;
+@tBgColor: spin(@baseColor, 180);
+@dBgColor: spin(@tBgColor, -90);
+@footerColor: lightgray;
+@referencesHoverColor: white;
+@referencesBgColor: black;
+
+/* sizes */
+
+@mFontSize: 16px;
+@tFontSize: @mFontSize * .95;
+@dFontSize: @mFontSize * .90;
+@h1FontSize: 2em;
+@h2FontSize: @h1FontSize * .7;
+@h3FontSize: @h1FontSize * .55;
+@contactFontSize: 0.9em;
+
+/* margins */
+
+@pHeadingMargin: 1em 0;
+@mBodyMargin: 0 1em;
+@tBodyMargin: 0 4%;
+@dBodyMargin: 0 3%;
+@olLiLeftMargin: 8px;
+
+@import "style.less";
+
+/* MOBILE STYLES */
+
+body {
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.5em;
+    #tp_mixins > .commonProperties(@mBgColor, @mFontSize, @mBodyMargin);
+}
+
+p, h1, h2, h3 {
+    margin: @pHeadingMargin;
+}
+
+h1 {
+    #tp_mixins > .size(@h1FontSize);
+    text-shadow: 2px 2px #989898;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 2em;
+}
+
+h2 {
+    #tp_mixins > .size(@h2FontSize);
+}
+
+h3 {
+    #tp_mixins > .size(@h3FontSize);
+    font-style: italic;
+}
+
+ol {
+    list-style: decimal;
+    margin-left: 25px;
+}
+
+li {
+    line-height: 1.5em;
+}
+
+footer {
+    margin-bottom: 10px;
+    font-style: italic;
+    #tp_mixins > .color(@footerColor);
+    text-align: center;
+}
+
+#container {
+    margin: 0 1em;
+}
+
+#contact {
+    #tp_mixins > .size(@contactFontSize);
+    letter-spacing: 3px;
+}
+
+
+/* TABLET STYLES */
+
+@media only screen and (min-width: 600px) {
+
+    body {
+        #tp_mixins > .commonProperties(@tBgColor, @tFontSize, @tBodyMargin);
+    }
+
+    h2 {
+        margin-top: 0;
+        margin-bottom: .8em;
+    }
+
+    h3 {
+        margin-top: 0;
+    }
+
+}
+
+/* DESKTOP STYLES */
+
+@media only screen and (min-width: 1025px) {
+
+    body {
+        #tp_mixins > .commonProperties(@dBgColor, @dFontSize, @dBodyMargin);
+    }

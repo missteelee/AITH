@@ -14,53 +14,56 @@ Programmer: Traci Lee
 <meta name="author" content="Traci Lee"><base target="_blank"> 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">  
-<link rel="stylesheet" href=style.css type="text/css">  
+    <link href="style.less" rel="stylesheet/less" type="text/css">
+  <link rel="stylesheet" href=style.css type="text/css">  
 </head>
 
 <body>
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
-  <div class="w3-container">
+  
+<section class="w3-container">
     <h3><img src="images/logo.jpg" alt="Site Logo" style="width:50%;"></h3>
-  </div>
   <div class="w3-bar-block">
     <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
     <a href="#course_details" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course Details</a> 
     <a href="#registration" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registration</a> 
     <a href="#faqs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQs</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
   </div>
+  </section>
 </nav>
-
-<!-- Top menu on small screens -->
+  
 <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
   <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
   <span><img src="images/logo.jpg" alt="Site Logo" style="width:5%;"></span>
 </header>
-
-<main>
+  
+<a class="weatherwidget-io" href="https://forecast7.com/en/45d52n122d68/portland/?unit=us" data-label_1="PORTLAND" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-theme="dark" data-accent="rgba(255, 0, 0, 0)" data-textcolor="#FF0000" data-suncolor="#FF0000" >PORTLAND WEATHER</a>
+<script>
+!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
+</script>
+  
 <!-- Overlay effect when opening sidebar on small screens -->
 <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
 
 <!-- !PAGE CONTENT! -->
 <div class="w3-main" style="margin-left:340px;margin-right:40px">
-
-  <!-- Header -->
-  <div class="w3-container" style="margin-top:80px" id="showcase">
     
 <?php include 'includes/header.inc.html.php'; ?>
     
-    <h2>is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds.<br>
-    <b style="color: black;">We offer Events for Every Body.</b></h2>
-    <hr>
-  </div>
+    <h2><br>is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds.<br>
+      <b style="color: black;"> We offer Events for Every Body.</b></h2>
   
-<section>
+  <section>
   <div class="w3-container" id="services" style="margin-top:75px">
     <h1>JavaScript Slidshow</h1>
     <hr>
-    
+  </div>
+  </section>
+  
+  <section>
  <!-- Weekend Details -->
   <div class="w3-container" id="faqs" style="margin-top:75px">
     <h1>Ace in the Hole Multisport Weekend</h1>
@@ -130,13 +133,17 @@ Programmer: Traci Lee
             <strong>Splash 'n' Dash</strong>
             <p>The Kids event for participants ages 4 to 15. This is a 100 yard swim and a 50 yard dash. It is free if an adult registers for an event otherwise it is $25.</p>
   </div> 
-    
+    </div>
+    </section>  
+  
+   
+  
+  <section>
   <!-- Registration -->
   <div class="w3-container" id="registration" style="margin-top:75px">
-    <h1>Registration</h1>
+ <h1>Registration</h1>
     <hr>
- <section>
-   <article id="registration">
+      <article id="registration">
         <ul>
           <li><span>Long Course Triathlon</span> <span>$240</span></li>
           <li><span>Olympic Triathlon</span> <span>$110</span></li>
@@ -154,98 +161,87 @@ Programmer: Traci Lee
           <li>Commemorative Finisher medal</li>
           <li>Accurate Chip Timing for competitive races</li>
           <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
-            <li>Post-event party and entertainment</li>
-          <li><i>NOTE: Tech shirts guaranteed to pre-registered participants only.</i></li>
+            <li>Post-event party and entertainment</li><br>
+            <li><i>NOTE: Tech shirts guaranteed to pre-registered participants only.</i></li>
         </ul>
 
         <strong>Packet Pick-Up</strong>
           <p>All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR.</p>
           <p>Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.</p>
 
-
+     </article>
+   
      <section>
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1>Registration</h1>
+    <hr>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
         <label>Full Name</label>
         <input class="w3-input w3-border" type="text" name="fname" required>
       </div>
-      
-      <div class="w3-section">
+        <div class="w3-section">
         <label>Age</label>
         <input class="w3-input w3-border" type="number" name="age" required>
-      </div> 
-      
-        <div class="w3-section">
-        <label>E-mail Address</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
-      </div>   
-      
-       <div class="w3-section">
+      </div>    
+      <div class="w3-section">
           <label for="role">You have registered as</label>
               <select size="1" name="role" id="role">
                 <option>Choose Your Role</option>
-                <option value="Athlete">Athelete</option>
-                <option value="Volunteer">Volunteer</option>
-                </select>
-         
-      </div>   
-          <div class="w3-section">
+                <option value="Athlete">Athlete</option>
+                <option value="Volunteer">Volunteer</option>  
+                </select>          
+      </div>
+      <div class="w3-section">
+        <label>E-mail Address</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
         <label>Emergency Contact Name</label>
         <input class="w3-input w3-border" type="text" name="emergency_name" required>
-      </div>    
-      
-          <div class="w3-section">
+      </div>      
+         <div class="w3-section">
         <label>Emergency Contact Phone Number</label>
         <input class="w3-input w3-border" type="number" name="emergency_phone_number" required>
       </div>    
-      
         <div class="w3-section">
           <label for="gender">Gender</label>
               <select size="1" name="gender" id="gender">
-                <option value="Male">Athelete</option>
-                <option value="Female">Volunteer</option>
-                <option value="Female">Non-Binary/Other</option>
-          </select>          
-      </div>  
-      
-       <div class="w3-section">
-          <label for="role">You have registered as</label>
-              <select size="1" name="role" id="role">
-                <option>Choose Your Role</option>
-                <option value="Athlete">Athelete</option>
-                <option value="Volunteer">Volunteer</option>
-                <option value="Interested">Interested Party</option> 
-                </select>         
-      
-      <div class="w3-section">
-          <label for="role">Saturday Events Registering For</label>
-              <select size="1" name="role" id="role">
+                <option>Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other/Non-Binary</option>  
+                </select>          
+      </div>   
+           <div class="w3-section">
+          <label for="saturday_courses">Saturday Events Registering For</label>
+              <select size="1" name="saturday_courses" id="role">
                 <option>Select a Course</option>
-                <option value="Long Course Tri">Long Course Triathlon - 7:00AM - $240</option>
-                <option value="Olympic Tri">Olympic Triathlon - 7:30AM - $110</option>
-                <option value="10K">10K - 7:15AM - $50</option>
-                <option value="Half Marathon">Half Marathon - 7:15AM - $75</option></select>    
-  
-        <div class="w3-section">
-          <label for="role">Sunday Events Registering For</label>
-              <select size="1" name="role" id="role">
+                <option value="Long Course Triathlon">Long Course Triathlon - 7:00AM - $240</option>
+                <option value="Olympic Triathlon">Olympic Triathlon - 7:30AM - $110</option>
+                <option value="10K">10K - 7:15AM - $50</option>  
+                 <option value="Half Marathon">Half Marathon - 7:15AM - $75</option>  
+             </select>          
+      </div>  
+           <div class="w3-section">
+          <label for="sunday_courses">Sunday Events Registering For</label>
+              <select size="1" name="saturday_courses" id="role">
                 <option>Select a Course</option>
                 <option value="Sprint Triathlon">Sprint Triathlon - 8:00AM - $90</option>
                 <option value="Try-a-Tri">Try-a-Tri - 8:20AM - $65</option>
-                <option value="10K">10K - 7:15AM - $50</option>
-                <option value="Splash n Dash">Splash n Dash - 12:00PM </option></select>          
-      </div>   
-     
-     <div class="w3-section">
+                <option value="Splash n Dash">Splash n Dash - 12:00PM </option>  
+                 <option value="Half Marathon">Half Marathon - 7:15AM - $75</option>  
+             </select>          
+      </div>       
+      <div class="w3-section">
         <label>Special Accommodations Needed</label>
         <input class="w3-input w3-border" type="text" name="special_accommodations" required>
-      </div>   
-        
+      </div>     
       <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Register</button>
-</div>
-</div>
-  </form>      
-  </section>
+    </form>  
+  </div>
+</section>
       
 <section>
     <div class="w3-container" id="faqs" style="margin-top:75px">
@@ -274,16 +270,19 @@ Programmer: Traci Lee
 </section>
     
         <section>
-            <h2>What to bring</h2>
+      <div class="w3-container" id="faqs" style="margin-top:75px">
+      <h1>What to bring</h1>
+      <hr>
             <p>Watch the weather closely. The show goes on no matter what the weather is doing.</p>
             <p>You must wear your chip timing piece during the entire event. You will be given a band that will hold your chip timing piece around your ankle throughout the entire event. Be sure that it is snapped tightly. Be sure to have your Chip Timing piece on before you start the race and be sure to step over the timing mats after each segment of the race. If you are wearing a wet-suit, make sure the timing piece goes under your wetsuit otherwise, you will have a very difficult time getting off your wet suit.</p>
             <p><strong>Swim</strong>: Wetsuits are optional for the swim but will provide buoyancy and warmth. However, many people opt for no wetsuit for a triathlon so no worries.  We will provide you with a swim cap but you will want to bring your own goggles.</p>
             <p><strong>Bike</strong>: A biking helmet is mandatory. You will also receive 2 stickers in your package with your race number on them.  The small sticker should go on the front of your helmet. The bigger sticker will wrap around your bike frame. Road or mountain bikes are acceptable.  For safety reasons, be sure to have end-caps on the end of your handle-bars.</p>
             <p><strong>Run</strong>: You must finish the race with your bib number on the front of you. Some people choose to pin it on at the beginning of the race and have it on for the whole event so they don’t have to worry about it. Others pin it on a singlet that they put on once they finish the swim before they head out for the bike. Others use an elastic racing strap that they pin their bib number to and then quickly strap it on before they leave for the run.  Use whatever option feels best for you.</p>
-            <p><i>Remember to bring a change of clothing so you can enjoy the post-event festivities.</i> </p>
-        </section>    
+            <p>Remember to bring a change of clothing so you can enjoy the post-event festivities.</p>
+          </div> 
+  </section>    
 
-  
+  <section>
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1>Contact Us</h1>
@@ -314,7 +313,8 @@ Programmer: Traci Lee
       <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
     </form>  
   </div>
-
+</section>
+  
 <script>
 // Script to open and close sidebar
 function w3_open() {
@@ -341,7 +341,6 @@ function onClick(element) {
 <div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">
   
 <?php include 'includes/footer.inc.html.php'; ?>
-</div>
-  
+    
 </body>
 </html>
