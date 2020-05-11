@@ -19,42 +19,13 @@ Programmer: Traci Lee
 </head>
 
 <body>
-<!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   
-<section class="w3-container">
-    <h3><img src="images/logo.jpg" alt="Site Logo" style="width:50%;"></h3>
-  <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#course_details" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course Details</a> 
-    <a href="#registration" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registration</a> 
-    <a href="#faqs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQs</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
-  </div>
-  </section>
-</nav>
-  
-<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
-  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
-  <span><img src="images/logo.jpg" alt="Site Logo" style="width:5%;"></span>
-</header>
-  
-<a class="weatherwidget-io" href="https://forecast7.com/en/45d52n122d68/portland/?unit=us" data-label_1="PORTLAND" data-label_2="WEATHER" data-font="Roboto" data-icons="Climacons Animated" data-theme="dark" data-accent="rgba(255, 0, 0, 0)" data-textcolor="#FF0000" data-suncolor="#FF0000" >PORTLAND WEATHER</a>
-<script>
-!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src='https://weatherwidget.io/js/widget.min.js';fjs.parentNode.insertBefore(js,fjs);}}(document,'script','weatherwidget-io-js');
-</script>
-  
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
-
-<!-- !PAGE CONTENT! -->
-<div class="w3-main" style="margin-left:340px;margin-right:40px">
-    
 <?php include 'includes/header.inc.html.php'; ?>
+<?php include 'includes/nav.inc.html.php'; ?>  
     
-    <h2><br>is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds.<br>
-      <b style="color: black;"> We offer Events for Every Body.</b></h2>
+    <h2>is proud to offer running and triathlon events to athletes of all shapes and sizes, national origins, gender identifications and cultural backgrounds.<br>
+    <strong>We offer Events for Every Body.</strong>
+  </h2>
   
   <section>
   <div class="w3-container" id="services" style="margin-top:75px">
@@ -66,36 +37,37 @@ Programmer: Traci Lee
   <section>
  <!-- Weekend Details -->
   <div class="w3-container" id="faqs" style="margin-top:75px">
-    <h1>Ace in the Hole Multisport Weekend</h1>
+    <h1>Annual Multisport Weekend</h1>
     <hr>
     <p>The Annual Ace in the Hole Multisport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation.</p>
 
     <p>There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!</p>
   </div>  
-  
+
+    
     <div class="w3-row-padding">
     <div class="w3-half w3-margin-bottom">
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Saturday</li>
-        <li class="w3-padding-16">Long Course Triathlon 7:00 AM</li>
-        <li class="w3-padding-16">Olympic Triathlon 7:30 AM</li>
-        <li class="w3-padding-16">10K 7:15 AM</li>
-        <li class="w3-padding-16">Half Marathon 7:15 AM</li>
+        <li class="w3-red">Saturday</li>
+        <li>Long Course Triathlon 7:00 AM</li>
+        <li>Olympic Triathlon 7:30 AM</li>
+        <li>10K 7:15 AM</li>
+        <li>Half Marathon 7:15 AM</li>
       </ul>
     </div>   
         
     <div class="w3-half">
       <ul class="w3-ul w3-light-grey w3-center">
-        <li class="w3-red w3-xlarge w3-padding-32">Sunday</li>
-        <li class="w3-padding-16">Sprint Triathlon 8:00 AM</li>
-        <li class="w3-padding-16">Try-a-Tri 8:20 AM</li>
-        <li class="w3-padding-16">Splash n Dash 12:00 PM</li>
-        <li class="w3-padding-16"><br></li>
+        <li class="w3-red">Sunday</li>
+        <li>Sprint Triathlon 8:00 AM</li>
+        <li>Try-a-Tri 8:20 AM</li>
+        <li>Splash n Dash 12:00 PM</li>
+        <li><br></li>
       </ul>
   </div>    
-    
+  <br>  
   <!-- Course Details -->
-  <div class="w3-container" id="course_details" style="margin-top:75px">
+  <div class="w3-container" id="course_details" style="margin-top:150px">
         <h1>Course Details</h1>
        <hr> 
             <p><strong>WATER TEMPERATURE</strong> is expected to be between 62 &amp; 66 degrees. The temperature will be taken on Friday and the morning of the race. Wetsuits are recommended.</p>
@@ -136,8 +108,6 @@ Programmer: Traci Lee
     </div>
     </section>  
   
-   
-  
   <section>
   <!-- Registration -->
   <div class="w3-container" id="registration" style="margin-top:75px">
@@ -162,11 +132,11 @@ Programmer: Traci Lee
           <li>Accurate Chip Timing for competitive races</li>
           <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
             <li>Post-event party and entertainment</li><br>
-            <li><i>NOTE: Tech shirts guaranteed to pre-registered participants only.</i></li>
+            <strong>NOTE:</strong> Tech shirts guaranteed to pre-registered participants only.
         </ul>
 
         <strong>Packet Pick-Up</strong>
-          <p>All packet pick up will occur at Why Worry Racing, 123 NW Everett, Portland OR.</p>
+          <p>All packet pick up will occur at Why Worry Racing at 123 NW Everett, Portland OR.</p>
           <p>Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.</p>
 
      </article>
@@ -248,22 +218,22 @@ Programmer: Traci Lee
     <h1>Frequently Asked Questions</h1>
     <hr>
           <ul>
-              <p><b>What are the Rules?</b></p>
+              <p><strong>What are the Rules?</strong></p>
                 <p>We currently adhere to the USAT Rules for Triathlon &amp; Duathlon. Important rules include no drafting, you must wear a helmet and music is <strong>absolutely not</strong> allowed during the bike for obvious safety reasons.</p>
 
-              <p><b>Can I use a personal music device while cycling?</b></p>
+              <p><strong>Can I use a personal music device while cycling?</strong></p>
                 <p>Absolutely no music devices are allowed during the bike segment for obvious safety risks and will result in immediate disqualification.</p>
 
-                <p><b>Can I use a personal music device while running?</b></p>
+                <p><strong>Can I use a personal music device while running?</strong></p>
                   <p>During any running segments, we prefer for athletes to NOT use music devices to maximize safety, assure a fair competitive environment and assure athletes can hear all course marshal instructions. With that said, we also understand that many athletes rely on music to help endure the challenge of running. To accommodate the needs of our athletes while still assuring maximum safety and a fair, competitive environment, here is the arrangement that we can accommodate.</p>
                   <p>If you chose to use a personal music device, you must always keep one ear open for instructions so only one ear-bud can be used at any time. In addition, if you opt to use music, you will not be eligible for awards, points and rankings. So as an athlete, you have to make a choice - music or awards/points/rankings.</p>
                   <p>If you are using a personal music devise with two earbuds, you will be immediately disqualified. Trust us, we don’t want to have to enforce a disqualification but in order to assure the safety of all athletes, this is a very important rule.</p>
                   <p>We also request that if you chose to use a personal music device that you keep the volume to a minimum to assure all instructions can be heard.</p>
                   
-                  <p><b>Do I need to wear a wetsuit?</b></p>
+                  <p><strong>Do I need to wear a wetsuit?</strong></p>
                   <p>No, you do not need to wear a wetsuit. Many will not wear a wetsuit while others will choose to wear a wetsuit because of the buoyancy and warmth factor.</p>
 
-                  <p><b>Do I have to use a road or racing bike?</b></p>
+                  <p><strong>Do I have to use a road or racing bike?</strong></p>
                   <p>No. We welcome any type of bike as long as it is functioning properly with brakes and endcaps at the end of your handlebars.</p>
             </ul>
 </div>
@@ -287,7 +257,8 @@ Programmer: Traci Lee
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1>Contact Us</h1>
     <hr>
-    <p>Still have questions? Fill out the form below and a member of our team will get back to you within 24 hours.</p>
+    <p>Still have questions?<br>
+      Fill out the form below and a member of our team will get back to you within 24 hours.</p>
     <form action="/action_page.php" target="_blank">
       <div class="w3-section">
         <label>Name</label>
