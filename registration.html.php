@@ -8,8 +8,8 @@
 <meta name="author" content="Traci Lee"><base target="_blank"> 
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">  
-    <link href="style.less" rel="stylesheet/less" type="text/css">
-  <link rel="stylesheet" href=style.css type="text/css">  
+    <link href="../styles/style.less" rel="stylesheet/less" type="text/css">
+  <link rel="stylesheet" href=../styles/style.css type="text/css">  
 </head>
 
 <body>
@@ -18,30 +18,65 @@
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   
 <section class="w3-container">
-    <h3><img src="images/logo.jpg" alt="Site Logo" style="width:50%;"></h3>
+    <h3><img src="../images/logo.jpg" alt="Site Logo" style="width:50%;"></h3>
   <div class="w3-bar-block">
-    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
-    <a href="#course_details" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course Details</a> 
-    <a href="#registration" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registration</a> 
-    <a href="#faqs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQs</a> 
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
+    <a href="../template/template.php" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Home</a> 
+    <a href="../template/template.php#course_details" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Course Details</a> 
+    <a href="../template/template.php#registration" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Registration</a> 
+    <a href="../template/template.php#faqs" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">FAQs</a> 
+    <a href="../template/template.php#contact" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Contact Us</a>
   </div>
   </section>
 </nav>
 
 <body>
   <div id="wrapper">
-      <?php include 'includes/header.inc.html.php'; ?>
-    <main>
-      <section>
+    
+<?php include '../includes/header.inc.html.php'; ?>
+
+  <main>
+ <section>
+  <!-- Registration -->
+  <div class="w3-container" id="registration" style="margin-top:75px">
+ <h1>Pricing</h1>
+    <hr>
+      <article id="registration">
+        <ul>
+          <li><span>Long Course Triathlon</span> <span>$240</span></li>
+          <li><span>Olympic Triathlon</span> <span>$110</span></li>
+          <li><span>10K</span> <span>$50</span></li>
+          <li><span>Half Marathon</span> <span>$75</span></li>
+          <li><span>Sprint Triathlon</span> <span>$90</span></li>
+          <li><span>Try-a-Tri</span> <span>$65</span></li>
+          <li><span>Splash n Dash - It is free if an adult registers for an event otherwise it is $25</span></li>
+        </ul>
+
+        <strong>Cost Includes</strong>
+        <ul>
+          <li>Food &amp; Beer </li>
+          <li>Access to the weekend’s live entertainment &amp; Fitness Expo</li>
+          <li>Commemorative Finisher medal</li>
+          <li>Accurate Chip Timing for competitive races</li>
+          <li>Ace in the Hole Multisport Weekend Tech Shirt</li>
+            <li>Post-event party and entertainment</li><br>
+            <strong>NOTE:</strong> Tech shirts guaranteed to pre-registered participants only.
+        </ul>
+
+        <strong>Packet Pick-Up</strong>
+          <p>All packet pick up will occur at Why Worry Racing at 123 NW Everett, Portland OR.</p>
+          <p>Packet pick up hours: Thursday 8-5, Friday 9-noon. No day of event packet pick up.</p>
+
+     </article>
+   
+     <section>
   <!-- Contact -->
   <div class="w3-container" id="contact" style="margin-top:75px">
     <h1>Registration</h1>
     <hr>
-    <form action="/action_page.php" target="_blank">
+<form method="post" action=" ">
       <div class="w3-section">
         <label>Full Name</label>
-        <input class="w3-input w3-border" type="text" name="fname" required>
+        <input class="w3-input w3-border" type="text" name="full_name" required>
       </div>
         <div class="w3-section">
         <label>Age</label>
@@ -57,15 +92,15 @@
       </div>
       <div class="w3-section">
         <label>E-mail Address</label>
-        <input class="w3-input w3-border" type="text" name="Email" required>
+        <input class="w3-input w3-border" type="text" name="email" required>
       </div>
       <div class="w3-section">
         <label>Emergency Contact Name</label>
-        <input class="w3-input w3-border" type="text" name="emergency_name" required>
+        <input class="w3-input w3-border" type="text" name="emergency_contact" required>
       </div>      
          <div class="w3-section">
         <label>Emergency Contact Phone Number</label>
-        <input class="w3-input w3-border" type="number" name="emergency_phone_number" required>
+        <input class="w3-input w3-border" type="number" name="emergency_phone" required>
       </div>    
         <div class="w3-section">
           <label for="gender">Gender</label>
@@ -88,7 +123,7 @@
       </div>  
            <div class="w3-section">
           <label for="sunday_courses">Sunday Events Registering For</label>
-              <select size="1" name="saturday_courses" id="role">
+              <select size="1" name="sunday_courses" id="role">
                 <option>Select a Course</option>
                 <option value="Sprint Triathlon">Sprint Triathlon - 8:00AM - $90</option>
                 <option value="Try-a-Tri">Try-a-Tri - 8:20AM - $65</option>
@@ -99,13 +134,19 @@
       <div class="w3-section">
         <label>Special Accommodations Needed</label>
         <input class="w3-input w3-border" type="text" name="special_accommodations" required>
-      </div>     
-      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Register</button>
+      </div>    
+  
+        <input id="mysubmit" type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom" value="Submit"> 
+  
+  
     </form>  
   </div>
 </section>
-    </main>
-      <?php include 'includes/footer.inc.html.php'; ?>
-  </div>
+    
+    
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">
+  
+<?php include '../includes/footer.inc.html.php'; ?>
+    
 </body>
 </html>
