@@ -1,52 +1,63 @@
 <?php
 // Edit or Replace this try/catch statement to work with the current PHT configuration
-include 'includes/db.inc.html.php';
 
-// Modify the If statement so the try only runs if the First Name field has been submitted AND the honeypot field is empty ''
-if (isset($_POST['myfname']) AND empty($_POST['honeypot'])) {
-    $tour = $_POST['tour'];
-    $myfname = $_POST['myfname'];
-    $mylname = $_POST['mylname'];
-    $myemail = $_POST['myemail'];
-    $myphone = $_POST['myphone'];
-    $mydate = $_POST['mydate'];
-    $myparticipants = $_POST['myparticipants'];
-    $myallergies = $_POST['myallergies'];
-    $honeypot = $_POST['honeypot'];
+include  '../includes/db.inc.html.php';
 
-    // If the if statement is true, save each form field value as a variable. These variable values will be used in the thank you page.
-
-    // And run the try/catch to attempt to insert data in the database. Modify the INSERT statement to write all the form filed values (except the honeypot) to the database.
+        // Modify the If statement so the try only runs if the First Name field has been submitted AND the honeypot field is empty ''
+if (isset($_POST['fullName']))
+  {
+      $full_name = $_POST['full_name'];
+      $age = $_POST['age'];
+      $role = $_POST['role'];
+      $email = $_POST['email'];
+      $emergency_contact = $_POST['emergency_contact'];
+      $emergency_phone = $_POST['emergency_phone'];
+      $gender = $_POST['gender'];
+      $saturday_courses = $_POST['saturday_courses'];
+      $sunday_courses = $_POST['sunday_courses'];
+      $special_accommodations = $_POST['special_accommodations'];
     try {
-        $sql = 'INSERT INTO reservations SET
-        tour = :tour, 
-        fname = :fname,
-        lname = :lname,
+      $sql = 'INSERT INTO registration SET
+      
+        full_name = :full_name,
+        age = :age,
+        role = :role,
         email = :email,
-        phone = :phone,
-        date = :date,
-        participants = :participants,
-        allergies = :allergies';
-        $s = $pdo->prepare($sql);
-        $s->bindValue(':tour', $tour);
-        $s->bindValue(':fname', $myfname);
-        $s->bindValue(':lname', $mylname);
-        $s->bindValue(':email', $myemail);
-        $s->bindValue(':phone', $myphone);
-        $s->bindValue(':date', $mydate);
-        $s->bindValue(':participants', $myparticipants);
-        $s->bindValue(':allergies', $myallergies);
-        $s->execute();
+        emergency_contact = :emergency_contact,
+        emergency_phone = :emergency_phone,
+        gender = :gender,
+        saturday_courses = :saturday_courses,
+        sunday_courses = :sunday_courses,
+        special_accommodations = :special_accommodations';
 
-    } catch (PDOException $e) {
-        $error = 'Error adding reservation: ' . $e->getMessage();
-        include '../includes/error.html.php';
-        exit();
+      $s = $pdo->prepare($sql);
+      $s->bindValue(':full_name', $full_name);
+      $s->bindValue(':age', $age);
+      $s->bindValue(':role', $role);
+      $s->bindValue(':email', $email);
+      $s->bindValue(':emergency_contact', $emergency_contact);
+      $s->bindValue(':emergency_phone', $emergency_phone);
+      $s->bindValue(':gender', $gender);
+        $s->bindValue(':saturday_courses', $saturday_courses);
+        $s->bindValue(':sunday_courses', $sunday_courses);
+      $s->bindValue(':special_accommodations', $special_accommodations);
+      $s->execute();
+    }
+    catch (PDOException $e)
+    {
+      $error = 'Error adding submitted registration form: ' . $e->getMessage();
+      include '../includes/error.html.php';
+      exit();
     }
     // load the thank you page after the INSERT runs
-    include 'success.html.php';
-} else {
-      include 'reservations.html.php';
- //Modify this to include the initial file for this folder
+      include 'success.html.php';
+    // Add an else to load the initial page if the initial (line 19) if statement is false
+    
+  }
+		
+else {
+  include 'registration.html.php';
 }
+
 ?>
+
