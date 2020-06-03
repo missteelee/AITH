@@ -1,0 +1,24 @@
+h1, p 
+{
+  text-align: center;
+   font-family: "Poppins", sans-serif;
+}
+
+h3 {
+  text-align: center;
+   font-family: "Poppins", sans-serif;
+}
+
+main {
+   font-family: "Poppins", sans-serif;
+}
+
+input, textarea , button
+{
+  width: 100%;
+}    
+textarea
+{
+  height: 200px;
+}
+
