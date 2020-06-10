@@ -17,13 +17,25 @@ Programmer: Traci Lee
 <link href="../styles/style.less" rel="stylesheet/less" type="text/css">
 <link rel="stylesheet" href="../styles/style.css" type="text/css">
 </head>
+  
+  <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right w3-padding" onclick="w3_open()">☰</a>
+</header>
+  
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  
 
 <body>
+  
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="pRWS3S9Z"></script>
+  
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
   
-<section class="w3-container">
+    <section class="w3-container">
     <h3><img src="../images/logo.jpg" alt="Site Logo" style="width:50%;"></h3>
   
   <div class="w3-bar-block">
@@ -262,20 +274,27 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
-</script>   
-  </div>
+  </script>   </body></div>
   </section>
   
-  <section>
- <!-- Weekend Details -->
-  <div class="w3-container" id="weekend" style="margin-top:75px">
+  
+
+<div class="row">
+  <div class="column">
+     <div class="w3-container" id="weekend" style="margin-top:75px">
     <h1>Annual Multisport Weekend</h1>
     <hr>
     <p>The Annual Ace in the Hole Multisport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation.</p>
 
     <p>There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!</p>
   </div>  
-
+  </div>
+  <div class="column">
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v7.0" nonce="pRWS3S9Z"></script>
+  </div> 
+</div>
+<section>
     
     <div class="w3-row-padding">
     <div class="w3-half w3-margin-bottom">
@@ -304,19 +323,19 @@ function showSlides(n) {
        <hr> 
             <p><strong>WATER TEMPERATURE</strong> is expected to be between 62 &amp; 66 degrees. The temperature will be taken on Friday and the morning of the race. Wetsuits are recommended.</p>
 
-            <strong>Long Course SWIM – 1.2mi</strong>
+            <strong>Long Course SWIM – 1.2 miles</strong>
             <p>Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.</p>
 
-            <strong>Long Course BIKE – 58 Miles</strong>
+            <strong>Long Course BIKE – 58 miles</strong>
             <p>A scenic point-to-point course that travels over gently rolling hills prior to three hard climbs. The bike course will be marked with large directional signage and there will be course marshals at key intersections to help direct you.</p>
 
-            <strong>Long Course RUN – 13.1mi</strong>
+            <strong>Long Course RUN – 13.1 miles</strong>
             <p>A mostly flat loop course on widely paved bike paths that traverse through and around this beautiful and scenic destination resort (two hills total with a minimal elevation gain).</p>
 
             <strong>Olympic SWIM – 1,500 meters</strong>
             <p>Participants will make two counter-clockwise loops. Large buoys will mark the turn points. Kayakers will be positioned on the water to support the swimmers. Medical support will be present on the beach.</p>
 
-            <strong>Olympic BIKE – 28mi</strong>
+            <strong>Olympic BIKE – 28 miles</strong>
             <p>A scenic point-to-point course that travels over gently rolling hills. The bike course will be marked with large directional signage and course marshals will be present at key intersections.</p>
 
             <strong>Olympic RUN – 10K</strong>
@@ -328,10 +347,10 @@ function showSlides(n) {
             <strong>Try-A-Tri</strong>
             <p>This novice race is designed for the first time triathlete, those new to the sport, our Junior Triathletes. The swim is a shorter, more manageable 1/4 mile distance, (instead of the standard 1/2-mile Sprint distance swim), 10 mile bike ride (vs 12 miles and it's a 2 loop course making it very spectator friendly!) and a flat 2 mile run (vs 3 mile sprint course).</p>
 
-            <strong>Half Marathon COURSE: Half-Marathon (13.1-miles)</strong>
+            <strong>Half Marathon COURSE: Half-Marathon (13.1 miles)</strong>
             <p>Half-Marathon event starts and finishes in the Athletes Village to the cheers of the enthusiastic crowd. Once finished, runners can enjoy the finish line festivities, including the Sports &amp; Fitness Expo and live entertainment. Post-race refreshments will be provided and the Awards Ceremony for the Half-Marathon will begin once the results have been certified.</p>
 
-            <strong>10k COURSE</strong>
+            <strong>10K Course</strong>
             <p>The 10K event starts and finishes in the Athletes Village. The paths are approximately 6 ft wide, perfectly paved and wind around through the forest. Each course has only two small hills with a minimal elevation gain to navigate and a fast downhill to flat finish to the roaring cheers of the crowd.</p>
 
             <strong>Splash 'n' Dash</strong>
